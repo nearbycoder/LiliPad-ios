@@ -30,3 +30,9 @@ small{color:var(--muted)}
 .promo-footer button{flex-shrink:0;border:0;border-radius:999px;background:var(--accent);color:var(--bg);padding:12px 18px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;min-height:44px}
 .promo-footer button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 @media(max-width:480px){.promo-footer{align-items:flex-start;flex-direction:column}.promo-footer button{width:100%}}
+
+.promo{position:relative;margin:24px 0 8px;border-radius:24px;overflow:hidden;border:1px solid var(--border);box-shadow:0 12px 40px rgba(43,71,51,.15);background:var(--soft)}
+.promo video{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.promo button{position:absolute;right:14px;bottom:14px;border:0;border-radius:999px;padding:10px 16px;font:700 15px/1 ui-rounded,-apple-system,system-ui,sans-serif;color:#fff;background:rgba(58,107,77,.92);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.promo button:hover{background:#2f5a40}
+@media (prefers-reduced-motion:reduce){.promo video{animation:none}}
