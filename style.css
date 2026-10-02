@@ -17,3 +17,11 @@ a{color:var(--accent)}
 .soft{background:var(--soft)}
 nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:15px}
 small{color:var(--muted)}
+.promo{margin:28px 0;background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.promo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#edf3e5}
+.promo-footer{display:flex;align-items:center;gap:16px;padding:16px 20px}
+.promo-footer p{flex:1;margin:0;font-size:15px;line-height:1.5}
+.promo-footer span{display:block;font-size:13px;margin-top:4px}
+.promo-footer button{flex-shrink:0;border:0;border-radius:999px;background:var(--accent);color:var(--bg);padding:12px 18px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;min-height:44px}
+.promo-footer button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:480px){.promo-footer{align-items:flex-start;flex-direction:column}.promo-footer button{width:100%}}
