@@ -17,6 +17,11 @@ a{color:var(--accent)}
 .soft{background:var(--soft)}
 nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid var(--border);font-size:15px}
 small{color:var(--muted)}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) 210px;gap:20px;align-items:center}
+.intro picture{display:block}
+.intro img{display:block;width:100%;height:auto}
+.intro p{margin-bottom:0}
+@media(max-width:600px){.intro{grid-template-columns:1fr}.intro picture{width:220px;justify-self:center}.intro h1{font-size:32px}}
 .promo{margin:28px 0;background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden}
 .promo video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#edf3e5}
 .promo-footer{display:flex;align-items:center;gap:16px;padding:16px 20px}
